@@ -29,7 +29,7 @@ export const SITE = {
   adsenseId: 'ca-pub-3707407763414210',
 
   // Google Search Console 인증 코드 — Search Console → 설정 → 소유권 확인 → HTML 태그 방식
-  googleVerification: '',
+  googleVerification: 'SG3eDjq8t8SeacZliY6Lpq2CUcuPpb-r6UtsXzhYZlU',
 
   // 네이버 서치어드바이저 인증 코드
   naverVerification: '',
