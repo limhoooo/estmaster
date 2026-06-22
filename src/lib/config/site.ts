@@ -23,7 +23,7 @@ export const SITE = {
     '게임 PC 최적화',
     'CPU GPU 비교',
     '견적도사',
-  ],
+  ] as string[],
 
   // Google AdSense 게시자 ID — AdSense 계정 → 계정 → 계정 정보에서 확인
   adsenseId: 'ca-pub-XXXXXXXXXXXXXXXXX',
