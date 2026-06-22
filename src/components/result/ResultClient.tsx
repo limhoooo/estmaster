@@ -70,10 +70,11 @@ export default function ResultClient({ cpus, gpus, games }: Props) {
   return (
     <>
       {/* 헤더 */}
-      <div className="mb-8 flex flex-wrap items-start justify-between gap-4 border-b border-slate-800 pb-8">
+      <div className="mb-8 border-b border-slate-800 pb-8">
+        <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <div className="flex flex-wrap items-center gap-2">
-            <h1 className="text-2xl font-bold text-white md:text-3xl">진단 결과</h1>
+            <h1 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">진단 결과</h1>
             {laptopDevice && (
               <span className="rounded-full border border-amber-500/30 bg-amber-500/10 px-2.5 py-0.5 text-xs font-medium text-amber-400">
                 노트북
@@ -87,9 +88,10 @@ export default function ResultClient({ cpus, gpus, games }: Props) {
             ))}
           </div>
         </div>
-        <Link href="/" className="rounded-xl border border-slate-700 px-5 py-2.5 text-sm font-medium text-slate-300 transition hover:border-slate-500 hover:text-white">
-          ← 다시 진단하기
+        <Link href="/" className="flex-shrink-0 rounded-xl border border-slate-700 px-4 py-2 text-sm font-medium text-slate-300 transition hover:border-slate-500 hover:text-white">
+          ← 다시 진단
         </Link>
+        </div>
       </div>
 
       {/* 노트북 배너 */}
@@ -169,8 +171,8 @@ export default function ResultClient({ cpus, gpus, games }: Props) {
 
         <AdUnit slot="SLOT_ID_RESULT_BOTTOM" format="horizontal" />
 
-        <div className="pt-2 text-center">
-          <Link href="/" className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-500">
+        <div className="pt-2">
+          <Link href="/" className="flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 py-3.5 text-base font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-500 sm:w-auto sm:px-8">
             ← 다시 진단하기
           </Link>
         </div>

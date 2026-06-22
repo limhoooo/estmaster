@@ -102,7 +102,7 @@ export default function HomePage() {
 
       <section
         id="diagnose"
-        className="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 px-4 py-14 sm:px-6 lg:px-8"
+        className="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 px-4 py-10 sm:py-14 sm:px-6 lg:px-8"
       >
         <div className="mx-auto max-w-2xl">
           <div className="mb-8 text-center">
@@ -110,7 +110,7 @@ export default function HomePage() {
               <span className="h-2 w-2 animate-pulse rounded-full bg-blue-400" />
               무료 · 즉시 진단 · 서버 없음
             </div>
-            <h1 className="hero-title mt-3 text-3xl font-bold text-white md:text-4xl">
+            <h1 className="hero-title mt-3 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
               내 PC,{' '}
               <span className="text-blue-400">어디가 막혔을까?</span>
             </h1>

@@ -26,13 +26,13 @@ export default function HowItWorksSection() {
   return (
     <AnimatedSection
       id="how-it-works"
-      className="bg-gradient-to-b from-slate-900 to-slate-950 px-4 py-20 sm:px-6 lg:px-8"
+      className="bg-gradient-to-b from-slate-900 to-slate-950 px-4 py-14 sm:py-20 sm:px-6 lg:px-8"
     >
       <div className="mx-auto w-full max-w-5xl">
         <p className="stagger-child stagger-0 mb-3 text-center text-xs font-semibold uppercase tracking-widest text-blue-400">
           사용 방법
         </p>
-        <h2 className="stagger-child stagger-0 mb-14 text-center text-2xl font-bold text-white md:text-3xl">
+        <h2 className="stagger-child stagger-0 mb-10 text-center text-xl font-bold text-white sm:mb-14 sm:text-2xl md:text-3xl">
           <span className="text-blue-400">3단계</span>로 끝납니다
         </h2>
 

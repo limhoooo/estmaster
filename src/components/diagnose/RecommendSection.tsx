@@ -30,18 +30,18 @@ export default function RecommendSection({ recommendation }: Props) {
             {recommendedModel}
           </span>
         </div>
-        <div className="mb-5 flex items-baseline gap-2">
+        <div className="mb-5">
           <span className="text-2xl font-black text-blue-600 dark:text-blue-400">
             약 {price.approximate}
           </span>
-          <span className="text-xs text-slate-400">(임시 가격 · 실제 구매처 확인 필요)</span>
+          <p className="mt-0.5 text-xs text-slate-400">임시 가격 · 실제 구매처에서 확인하세요</p>
         </div>
-        <div className="flex gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row">
           <a
             href={price.danawa_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 rounded-lg bg-orange-500 py-2.5 text-center text-sm font-medium text-white transition-colors hover:bg-orange-400"
+            className="flex-1 rounded-lg bg-orange-500 py-3 text-center text-sm font-medium text-white transition-colors hover:bg-orange-400"
           >
             다나와에서 보기
           </a>
@@ -49,7 +49,7 @@ export default function RecommendSection({ recommendation }: Props) {
             href={price.coupang_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 rounded-lg bg-red-500 py-2.5 text-center text-sm font-medium text-white transition-colors hover:bg-red-400"
+            className="flex-1 rounded-lg bg-red-500 py-3 text-center text-sm font-medium text-white transition-colors hover:bg-red-400"
           >
             쿠팡에서 보기
           </a>

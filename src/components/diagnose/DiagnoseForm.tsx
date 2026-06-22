@@ -143,16 +143,16 @@ export default function DiagnoseForm({ cpus, gpus, onSubmit, isLoading, onCpuCha
           </select>
         </div>
       </div>
-      <div className="flex items-center gap-4">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
         <button
           type="submit"
           disabled={!cpu || !gpu || isLoading}
-          className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-50"
+          className="w-full rounded-xl bg-blue-600 px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
         >
           {isLoading ? '진단 중...' : '진단 시작하기'}
         </button>
         {(!cpu || !gpu) && (
-          <p className="text-xs text-slate-400">CPU와 GPU를 선택해 주세요</p>
+          <p className="text-center text-xs text-slate-400 sm:text-left">CPU와 GPU를 선택해 주세요</p>
         )}
       </div>
     </form>

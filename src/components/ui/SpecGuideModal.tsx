@@ -198,16 +198,36 @@ export default function SpecGuideModal() {
               </button>
             </div>
 
-            {/* 탭 + 본문 (좌: 세로 탭, 우: 내용) */}
-            <div className="flex flex-1 overflow-hidden">
-              {/* 세로 탭 목록 */}
-              <nav className="flex w-32 flex-shrink-0 flex-col gap-0.5 border-r border-slate-800 p-2">
+            {/* 탭 + 본문 */}
+            <div className="flex flex-1 flex-col overflow-hidden">
+              {/* 가로 탭 (모바일) / 세로 탭 (sm+) */}
+              <nav className="flex overflow-x-auto border-b border-slate-800 px-2 sm:hidden">
                 {TAB_KEYS.map(t => (
                   <button
                     key={t}
                     type="button"
                     onClick={() => setTab(t)}
-                    className={`flex items-center gap-2 rounded-lg px-3 py-2.5 text-left text-xs font-medium transition ${
+                    className={`flex flex-shrink-0 items-center gap-1.5 border-b-2 px-3 py-3 text-xs font-medium transition ${
+                      tab === t
+                        ? 'border-blue-500 text-blue-400'
+                        : 'border-transparent text-slate-500'
+                    }`}
+                  >
+                    <span>{GUIDES[t].icon}</span>
+                    {GUIDES[t].label}
+                  </button>
+                ))}
+              </nav>
+
+              <div className="flex flex-1 overflow-hidden">
+              {/* 세로 탭 목록 (sm 이상) */}
+              <nav className="hidden w-28 flex-shrink-0 flex-col gap-0.5 border-r border-slate-800 p-2 sm:flex">
+                {TAB_KEYS.map(t => (
+                  <button
+                    key={t}
+                    type="button"
+                    onClick={() => setTab(t)}
+                    className={`flex items-center gap-2 rounded-lg px-2.5 py-2.5 text-left text-xs font-medium transition ${
                       tab === t
                         ? 'bg-blue-600/20 text-blue-400'
                         : 'text-slate-500 hover:bg-slate-800 hover:text-slate-300'
@@ -253,6 +273,7 @@ export default function SpecGuideModal() {
                     {guide.tip}
                   </p>
                 </div>
+              </div>
               </div>
             </div>
 

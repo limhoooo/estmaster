@@ -34,13 +34,13 @@ export default function FeatureSection() {
   return (
     <AnimatedSection
       id="features"
-      className="bg-dot-grid bg-slate-950 px-4 py-20 sm:px-6 lg:px-8"
+      className="bg-dot-grid bg-slate-950 px-4 py-14 sm:py-20 sm:px-6 lg:px-8"
     >
       <div className="mx-auto w-full max-w-5xl">
         <p className="stagger-child stagger-0 mb-3 text-center text-xs font-semibold uppercase tracking-widest text-blue-400">
           왜 견적도사인가
         </p>
-        <h2 className="stagger-child stagger-0 mb-14 text-center text-2xl font-bold text-white md:text-3xl">
+        <h2 className="stagger-child stagger-0 mb-10 text-center text-xl font-bold text-white sm:mb-14 sm:text-2xl md:text-3xl">
           다른 병목 계산기와{' '}
           <span className="text-blue-400">무엇이 다른가요?</span>
         </h2>
