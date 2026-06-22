@@ -76,8 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <head>
-        {/* Google AdSense — adsenseId를 실제 값으로 교체 후 주석 해제 */}
-        {/* <meta name="google-adsense-account" content={SITE.adsenseId} /> */}
+        <meta name="google-adsense-account" content={SITE.adsenseId} />
       </head>
       <body className="flex min-h-full flex-col bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
         <Header />
@@ -85,13 +84,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
       </body>
 
-      {/* AdSense 스크립트 — adsenseId 교체 후 활성화 */}
-      {/* <Script
+      <Script
         async
         src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${SITE.adsenseId}`}
         crossOrigin="anonymous"
         strategy="afterInteractive"
-      /> */}
+      />
     </html>
   );
 }

@@ -26,7 +26,7 @@ export const SITE = {
   ] as string[],
 
   // Google AdSense 게시자 ID — AdSense 계정 → 계정 → 계정 정보에서 확인
-  adsenseId: 'ca-pub-XXXXXXXXXXXXXXXXX',
+  adsenseId: 'ca-pub-3707407763414210',
 
   // Google Search Console 인증 코드 — Search Console → 설정 → 소유권 확인 → HTML 태그 방식
   googleVerification: '',
