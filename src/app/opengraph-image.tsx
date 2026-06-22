@@ -1,3 +1,5 @@
+export const dynamic = 'force-static';
+
 import { ImageResponse } from 'next/og';
 
 export const alt = '견적도사 — 무료 PC 업그레이드 진단';
