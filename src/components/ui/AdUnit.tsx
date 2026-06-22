@@ -24,9 +24,6 @@ export default function AdUnit({ slot, format = 'auto', className = '' }: Props)
     }
   }, []);
 
-  // adsenseId가 플레이스홀더면 광고 슬롯 렌더링 안 함
-  if (SITE.adsenseId === 'ca-pub-XXXXXXXXXXXXXXXXX') return null;
-
   return (
     <div className={`overflow-hidden ${className}`}>
       <ins
