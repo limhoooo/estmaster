@@ -1,0 +1,66 @@
+import { ImageResponse } from 'next/og';
+
+export const alt = '견적도사 — 무료 PC 업그레이드 진단';
+export const size = { width: 1200, height: 630 };
+export const contentType = 'image/png';
+
+export default function OgImage() {
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          background: 'linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%)',
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          fontFamily: 'sans-serif',
+          padding: '60px',
+        }}
+      >
+        <div style={{ color: '#60a5fa', fontSize: 18, letterSpacing: 4, marginBottom: 20, textTransform: 'uppercase' }}>
+          무료 PC 업그레이드 진단 도구
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: 20, marginBottom: 28 }}>
+          <div style={{
+            width: 64, height: 64,
+            background: '#2563eb',
+            borderRadius: 16,
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            fontSize: 32, fontWeight: 900, color: 'white',
+          }}>
+            E
+          </div>
+          <div style={{ color: 'white', fontSize: 72, fontWeight: 900, letterSpacing: -2 }}>
+            견적도사
+          </div>
+        </div>
+
+        <div style={{ color: '#94a3b8', fontSize: 26, textAlign: 'center', lineHeight: 1.6, maxWidth: 800 }}>
+          CPU · GPU · RAM을 입력하면<br />
+          병목 원인과 최적의 업그레이드를 즉시 알려드립니다
+        </div>
+
+        <div style={{
+          marginTop: 48,
+          background: '#2563eb',
+          color: 'white',
+          padding: '14px 36px',
+          borderRadius: 12,
+          fontSize: 22,
+          fontWeight: 700,
+        }}>
+          지금 무료로 진단하기 →
+        </div>
+
+        <div style={{ position: 'absolute', bottom: 32, color: '#475569', fontSize: 16 }}>
+          estmaster.kr
+        </div>
+      </div>
+    ),
+    { ...size },
+  );
+}
