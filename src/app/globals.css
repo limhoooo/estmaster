@@ -28,16 +28,9 @@ body {
   font-family: var(--font-sans), 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 }
 
-/* 섹션 진입 — 섹션 자체는 빠르게 페이드인 */
-.section-reveal {
-  opacity: 0;
-  transform: translateY(0.5rem);
-  transition: opacity 0.35s ease, transform 0.35s ease;
-}
-.section-reveal.is-visible {
-  opacity: 1;
-  transform: none;
-}
+/* 섹션 자체는 항상 보임 — 콘텐츠(stagger-child)만 애니메이션 */
+.section-reveal {}
+.section-reveal.is-visible {}
 
 /* 자식 요소 stagger 애니메이션 */
 .stagger-child {

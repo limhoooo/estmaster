@@ -21,7 +21,7 @@ export default function AnimatedSection({ children, className = '', id }: Props)
           observer.disconnect();
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.05 }
     );
     observer.observe(el);
     return () => observer.disconnect();
