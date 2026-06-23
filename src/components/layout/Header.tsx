@@ -22,6 +22,12 @@ export default function Header() {
             >
               홈
             </Link>
+            <Link
+              href="/games"
+              className="rounded-lg px-3 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-white transition-colors"
+            >
+              게임 사양
+            </Link>
             <HeaderDiagnoseButton />
           </nav>
         </div>
