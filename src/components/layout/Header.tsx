@@ -28,6 +28,12 @@ export default function Header() {
             >
               게임 사양
             </Link>
+            <Link
+              href="/custom"
+              className="rounded-lg px-3 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-white transition-colors"
+            >
+              PC 커스텀
+            </Link>
             <HeaderDiagnoseButton />
           </nav>
         </div>
