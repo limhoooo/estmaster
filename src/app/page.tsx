@@ -128,7 +128,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <CoupangBanner />
       <FeatureSection />
 
       {/* 광고 — FeatureSection 과 HowItWorksSection 사이 */}
@@ -139,6 +138,7 @@ export default function HomePage() {
       </div>
 
       <HowItWorksSection />
+      <CoupangBanner />
     </>
   );
 }
