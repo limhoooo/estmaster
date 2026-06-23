@@ -35,7 +35,7 @@ export function getRecommendation(
 
   if (upgradeComponent === 'GPU') {
     const candidates = allGpus
-      .filter(g => g.score > userGpu.score * 1.2)
+      .filter(g => g.score > userGpu.score * 1.05)
       .sort((a, b) => a.score - b.score);
 
     if (candidates.length === 0) return null;
@@ -68,7 +68,7 @@ export function getRecommendation(
     };
   } else {
     const candidates = allCpus
-      .filter(c => c.score > userCpu.score * 1.2)
+      .filter(c => c.score > userCpu.score * 1.05)
       .sort((a, b) => a.score - b.score);
 
     if (candidates.length === 0) return null;
