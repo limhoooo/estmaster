@@ -5,14 +5,14 @@ const MOCK_PRICES: Record<string, MockPrice> = {
   'RTX 4090': { approximate: '190만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+4090', coupang_url: 'https://www.coupang.com/np/search?q=RTX+4090' },
   'RTX 4080': { approximate: '130만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+4080', coupang_url: 'https://www.coupang.com/np/search?q=RTX+4080' },
   'RTX 4070 Ti': { approximate: '75만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+4070+Ti', coupang_url: 'https://www.coupang.com/np/search?q=RTX+4070+Ti' },
-  'RTX 4070': { approximate: '55만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+4070', coupang_url: 'https://www.coupang.com/np/search?q=RTX+4070' },
+  'RTX 4070': { approximate: '55만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+4070', coupang_url: 'https://link.coupang.com/a/eOiQEItZ1w' },
   'RTX 4060 Ti': { approximate: '40만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+4060+Ti', coupang_url: 'https://link.coupang.com/a/eOivC78OWW' },
-  'RTX 4060': { approximate: '30만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+4060', coupang_url: 'https://coupa.ng/cnAG20' },
+  'RTX 4060': { approximate: '30만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+4060', coupang_url: 'https://link.coupang.com/a/eOiPwPVq6C' },
   // NVIDIA RTX 30 Series
   'RTX 3080': { approximate: '50만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+3080', coupang_url: 'https://www.coupang.com/np/search?q=RTX+3080' },
   'RTX 3070': { approximate: '35만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+3070', coupang_url: 'https://www.coupang.com/np/search?q=RTX+3070' },
   'RTX 3060 Ti': { approximate: '25만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+3060+Ti', coupang_url: 'https://www.coupang.com/np/search?q=RTX+3060+Ti' },
-  'RTX 3060': { approximate: '20만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+3060', coupang_url: 'https://www.coupang.com/np/search?q=RTX+3060' },
+  'RTX 3060': { approximate: '20만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+3060', coupang_url: 'https://link.coupang.com/a/eOiRdVAVpI' },
   // NVIDIA RTX 20 Series
   'RTX 2080 Ti': { approximate: '30만원대(중고)', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+2080+Ti', coupang_url: 'https://www.coupang.com/np/search?q=RTX+2080+Ti' },
   'RTX 2060 SUPER': { approximate: '15만원대(중고)', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+2060+SUPER', coupang_url: 'https://www.coupang.com/np/search?q=RTX+2060+SUPER' },
@@ -29,7 +29,7 @@ const MOCK_PRICES: Record<string, MockPrice> = {
   'RX 7800 XT': { approximate: '45만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RX+7800+XT', coupang_url: 'https://www.coupang.com/np/search?q=RX+7800+XT' },
   // AMD RX 6000
   'RX 6700 XT': { approximate: '25만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RX+6700+XT', coupang_url: 'https://www.coupang.com/np/search?q=RX+6700+XT' },
-  'RX 6600': { approximate: '18만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RX+6600', coupang_url: 'https://www.coupang.com/np/search?q=RX+6600' },
+  'RX 6600': { approximate: '18만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RX+6600', coupang_url: 'https://link.coupang.com/a/eOiR6S9RTw' },
   'RX 5700 XT': { approximate: '15만원대(중고)', danawa_url: 'https://search.danawa.com/dsearch.php?query=RX+5700+XT', coupang_url: 'https://www.coupang.com/np/search?q=RX+5700+XT' },
   'RX 580': { approximate: '5만원대(중고)', danawa_url: 'https://search.danawa.com/dsearch.php?query=RX+580', coupang_url: 'https://www.coupang.com/np/search?q=RX+580' },
   // Intel 14th Gen
@@ -38,6 +38,7 @@ const MOCK_PRICES: Record<string, MockPrice> = {
   'i5-14600K': { approximate: '30만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=i5-14600K', coupang_url: 'https://www.coupang.com/np/search?q=i5-14600K' },
   // Intel 13th Gen
   'i9-13900K': { approximate: '45만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=i9-13900K', coupang_url: 'https://www.coupang.com/np/search?q=i9-13900K' },
+  'i5-13400F': { approximate: '14만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=i5-13400F', coupang_url: 'https://link.coupang.com/a/eOiSRubJcG' },
   'i7-13700K': { approximate: '35만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=i7-13700K', coupang_url: 'https://www.coupang.com/np/search?q=i7-13700K' },
   'i5-13600K': { approximate: '25만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=i5-13600K', coupang_url: 'https://www.coupang.com/np/search?q=i5-13600K' },
   // Intel 12th Gen
@@ -59,7 +60,7 @@ const MOCK_PRICES: Record<string, MockPrice> = {
   'Ryzen 9 5900X': { approximate: '25만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=Ryzen+9+5900X', coupang_url: 'https://www.coupang.com/np/search?q=Ryzen+9+5900X' },
   'Ryzen 7 5800X': { approximate: '18만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=Ryzen+7+5800X', coupang_url: 'https://www.coupang.com/np/search?q=Ryzen+7+5800X' },
   'Ryzen 5 5600X': { approximate: '14만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=Ryzen+5+5600X', coupang_url: 'https://www.coupang.com/np/search?q=Ryzen+5+5600X' },
-  'Ryzen 5 5600': { approximate: '11만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=Ryzen+5+5600', coupang_url: 'https://www.coupang.com/np/search?q=Ryzen+5+5600' },
+  'Ryzen 5 5600': { approximate: '11만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=Ryzen+5+5600', coupang_url: 'https://link.coupang.com/a/eOiTH339zM' },
   // AMD Ryzen 3000
   'Ryzen 7 3700X': { approximate: '8만원대(중고)', danawa_url: 'https://search.danawa.com/dsearch.php?query=Ryzen+7+3700X', coupang_url: 'https://www.coupang.com/np/search?q=Ryzen+7+3700X' },
   'Ryzen 5 3600': { approximate: '5만원대(중고)', danawa_url: 'https://search.danawa.com/dsearch.php?query=Ryzen+5+3600', coupang_url: 'https://www.coupang.com/np/search?q=Ryzen+5+3600' },
