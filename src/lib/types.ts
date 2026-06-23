@@ -58,9 +58,11 @@ export interface CompatibilityWarning {
   message: string;
 }
 
-export interface Recommendation {
-  component: 'CPU' | 'GPU';
-  currentModel: string;
+export type RecommendTierKey = 'budget' | 'balanced' | 'performance';
+
+export interface RecommendTier {
+  tier: RecommendTierKey;
+  label: string;
   recommendedModel: string;
   price: MockPrice;
   warnings: CompatibilityWarning[];
@@ -69,6 +71,12 @@ export interface Recommendation {
     before: GameGrade;
     after: GameGrade;
   }>;
+}
+
+export interface Recommendation {
+  component: 'CPU' | 'GPU';
+  currentModel: string;
+  tiers: RecommendTier[];
 }
 
 export interface DiagnoseInput {
