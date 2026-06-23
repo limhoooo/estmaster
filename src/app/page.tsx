@@ -6,6 +6,7 @@ import FeatureSection from '@/components/home/FeatureSection';
 import HowItWorksSection from '@/components/home/HowItWorksSection';
 import SpecGuideModal from '@/components/ui/SpecGuideModal';
 import AdUnit from '@/components/ui/AdUnit';
+import CoupangBanner from '@/components/ui/CoupangBanner';
 
 export const metadata: Metadata = {
   title: `${SITE.name} — 무료 PC 병목 진단 & 업그레이드 추천`,
@@ -127,6 +128,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <CoupangBanner />
       <FeatureSection />
 
       {/* 광고 — FeatureSection 과 HowItWorksSection 사이 */}

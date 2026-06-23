@@ -7,7 +7,7 @@ const MOCK_PRICES: Record<string, MockPrice> = {
   'RTX 4070 Ti': { approximate: '75만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+4070+Ti', coupang_url: 'https://www.coupang.com/np/search?q=RTX+4070+Ti' },
   'RTX 4070': { approximate: '55만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+4070', coupang_url: 'https://www.coupang.com/np/search?q=RTX+4070' },
   'RTX 4060 Ti': { approximate: '40만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+4060+Ti', coupang_url: 'https://www.coupang.com/np/search?q=RTX+4060+Ti' },
-  'RTX 4060': { approximate: '30만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+4060', coupang_url: 'https://www.coupang.com/np/search?q=RTX+4060' },
+  'RTX 4060': { approximate: '30만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+4060', coupang_url: 'https://coupa.ng/cnAG20' },
   // NVIDIA RTX 30 Series
   'RTX 3080': { approximate: '50만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+3080', coupang_url: 'https://www.coupang.com/np/search?q=RTX+3080' },
   'RTX 3070': { approximate: '35만원대', danawa_url: 'https://search.danawa.com/dsearch.php?query=RTX+3070', coupang_url: 'https://www.coupang.com/np/search?q=RTX+3070' },
