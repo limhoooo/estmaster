@@ -168,12 +168,17 @@ export default function SpecGuideModal() {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-slate-700 px-3.5 py-1.5 text-xs text-slate-400 transition hover:border-slate-500 hover:text-slate-200"
+        className="mt-4 inline-flex items-center gap-2 rounded-xl border border-blue-500/40 bg-blue-500/10 px-4 py-2.5 text-sm font-medium text-blue-300 shadow-lg shadow-blue-500/10 transition-all hover:border-blue-400/60 hover:bg-blue-500/20 hover:text-blue-200 hover:shadow-blue-500/20"
       >
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-          <circle cx="8" cy="8" r="6.5"/><path d="M8 7v5M8 5.5v.5"/>
+        {/* 깜빡이는 점 */}
+        <span className="relative flex h-2 w-2 flex-shrink-0">
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-60" />
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-400" />
+        </span>
+        내 PC 사양 확인 방법 모르겠어요?
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M2.5 8h11M8.5 3l5 5-5 5"/>
         </svg>
-        내 CPU·GPU·RAM 사양 확인하는 방법
       </button>
 
       {open && createPortal(
