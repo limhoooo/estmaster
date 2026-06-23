@@ -16,13 +16,19 @@ interface Props {
 }
 
 export default function AdUnit({ slot, format = 'auto', className = '' }: Props) {
+  const isPlaceholder = slot.startsWith('SLOT_ID_');
+
   useEffect(() => {
+    if (isPlaceholder) return;
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
     } catch {
       // AdSense 스크립트 로드 전 무시
     }
-  }, []);
+  }, [isPlaceholder]);
+
+  // 슬롯 ID가 플레이스홀더면 렌더링 안 함 (빈 공간 방지)
+  if (isPlaceholder) return null;
 
   return (
     <div className={`overflow-hidden ${className}`}>
