@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import type { CPU, GPU, Game, Resolution } from '@/lib/types';
@@ -21,6 +21,19 @@ interface Props {
 
 export default function ResultClient({ cpus, gpus, games }: Props) {
   const searchParams = useSearchParams();
+  const [copied, setCopied] = useState(false);
+
+  const handleShare = async () => {
+    const url = window.location.href;
+    const text = `내 PC 진단 결과를 확인해보세요! — 견적도사`;
+    if (navigator.share) {
+      try { await navigator.share({ title: '견적도사 PC 진단 결과', text, url }); } catch { /* 취소 */ }
+    } else {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
 
   const cpu = searchParams.get('cpu') ?? '';
   const gpu = searchParams.get('gpu') ?? '';
@@ -171,7 +184,18 @@ export default function ResultClient({ cpus, gpus, games }: Props) {
 
         <AdUnit slot="SLOT_ID_RESULT_BOTTOM" format="horizontal" />
 
-        <div className="pt-2">
+        <div className="flex flex-col gap-3 pt-2 sm:flex-row">
+          <button
+            type="button"
+            onClick={handleShare}
+            className="flex w-full items-center justify-center gap-2 rounded-xl border border-slate-600 py-3.5 text-base font-semibold text-slate-300 transition hover:border-slate-400 hover:text-white sm:w-auto sm:px-8"
+          >
+            {copied ? (
+              <><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 8l3.5 3.5L13 4"/></svg> 복사됨!</>
+            ) : (
+              <><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M10 2H6a1 1 0 00-1 1v1M4 5H3a1 1 0 00-1 1v7a1 1 0 001 1h8a1 1 0 001-1v-1M8 2h4a1 1 0 011 1v7a1 1 0 01-1 1h-1"/><path d="M6 9h4M8 7v4"/></svg> 결과 공유하기</>
+            )}
+          </button>
           <Link href="/" className="flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 py-3.5 text-base font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-500 sm:w-auto sm:px-8">
             ← 다시 진단하기
           </Link>
