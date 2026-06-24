@@ -19,6 +19,7 @@ export default function Header() {
             <Link href="/" className="rounded-lg px-2.5 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-white transition-colors">홈</Link>
             <Link href="/tier" className="rounded-lg px-2.5 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-white transition-colors">티어</Link>
             <Link href="/compare" className="rounded-lg px-2.5 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-white transition-colors">비교</Link>
+            <Link href="/articles" className="hidden rounded-lg px-2.5 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-white transition-colors sm:block">아티클</Link>
             <Link href="/games" className="hidden rounded-lg px-2.5 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-white transition-colors sm:block">게임 사양</Link>
             <Link href="/custom" className="hidden rounded-lg px-2.5 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-white transition-colors md:block">PC 커스텀</Link>
             <HeaderDiagnoseButton />
