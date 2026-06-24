@@ -4,7 +4,7 @@
 
 export const SITE = {
   // 실제 도메인으로 교체 (끝에 슬래시 없이)
-  url: 'https://estmaster.kr',
+  url: 'https://estmaster.net',
 
   name: '견적도사',
   nameEn: 'EstMaster',

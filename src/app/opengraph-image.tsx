@@ -65,7 +65,7 @@ export default function OgImage() {
         </div>
 
         <div style={{ position: 'absolute', bottom: 32, color: '#475569', fontSize: 16, display: 'flex' }}>
-          estmaster.kr
+          estmaster.net
         </div>
       </div>
     ),
