@@ -3,9 +3,11 @@ import Link from 'next/link';
 import { SITE } from '@/lib/config/site';
 
 export const metadata: Metadata = {
-  title: `서비스 소개 | ${SITE.name}`,
-  description: '견적도사는 PC 사양을 입력하면 병목 원인을 진단하고 비용 대비 최적의 업그레이드를 추천하는 무료 도구입니다.',
+  title: '견적도사 서비스 소개 — 무료 PC 병목 진단 도구 | 견적도사',
+  description: '견적도사는 PC CPU·GPU·RAM 사양을 입력하면 병목 원인을 진단하고 비용 대비 최적의 그래픽카드·프로세서 업그레이드를 추천하는 무료 도구입니다.',
+  keywords: ['PC 성능 진단', 'PC 업그레이드 도구', '무료 벤치마크', '견적도사 소개'],
   robots: { index: true, follow: true },
+  alternates: { canonical: `${SITE.url}/about` },
 };
 
 const FEATURES = [

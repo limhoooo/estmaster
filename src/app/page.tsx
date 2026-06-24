@@ -4,19 +4,25 @@ import { SITE } from '@/lib/config/site';
 import DiagnoseClient from '@/components/diagnose/DiagnoseClient';
 import FeatureSection from '@/components/home/FeatureSection';
 import HowItWorksSection from '@/components/home/HowItWorksSection';
+import FAQSection from '@/components/home/FAQSection';
 import SpecGuideModal from '@/components/ui/SpecGuideModal';
 import AdUnit from '@/components/ui/AdUnit';
 import CoupangBanner from '@/components/ui/CoupangBanner';
 
 export const metadata: Metadata = {
-  title: `${SITE.name} — 무료 PC 병목 진단 & 업그레이드 추천`,
+  title: '견적도사 — 무료 PC 업그레이드 진단 | CPU GPU 병목 확인 & 게임 사양 추천',
   description:
-    'CPU·GPU·RAM을 입력하면 병목 원인을 즉시 진단합니다. 게임별 실행 등급, 비용 대비 최적 업그레이드 부품까지 한 번에 확인하세요. 무료 · 즉시 · 서버 없음.',
+    'CPU·GPU·RAM을 입력하면 PC 병목 원인을 즉시 진단합니다. 사이버펑크·배그·롤 등 33개 게임 실행 등급, 비용 대비 최적 그래픽카드·프로세서 업그레이드 추천까지 한 번에. 무료·즉시·개인정보 없음.',
+  keywords: [
+    'PC 업그레이드', 'PC 병목', 'CPU 병목', 'GPU 병목', 'PC 성능 진단',
+    '그래픽카드 추천', '게임 권장 사양', 'PC 사양 확인', 'CPU GPU 비교',
+    '컴퓨터 업그레이드', '게임 PC 추천', 'RTX 4060 추천', 'PC 성능 테스트',
+    '사이버펑크 사양', '배틀그라운드 권장사양', '견적도사',
+  ],
   alternates: { canonical: SITE.url },
   openGraph: {
-    title: `${SITE.name} — 무료 PC 병목 진단 & 업그레이드 추천`,
-    description:
-      'CPU·GPU·RAM 입력만으로 병목 원인 진단 + 게임별 실행 등급 + 비용 대비 최적 업그레이드 추천.',
+    title: '견적도사 — 무료 PC 병목 진단 & GPU CPU 업그레이드 추천',
+    description: 'CPU·GPU 입력만으로 병목 진단 + 33개 게임 실행 등급 + 최적 업그레이드 추천. 완전 무료.',
     url: SITE.url,
   },
 };
@@ -40,14 +46,20 @@ const jsonLd = {
     {
       '@type': 'WebApplication',
       '@id': `${SITE.url}/#app`,
-      name: `${SITE.name} PC 업그레이드 진단`,
+      name: '견적도사 PC 업그레이드 진단',
       url: SITE.url,
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Web Browser',
       inLanguage: 'ko-KR',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'KRW' },
-      description:
-        'CPU·GPU·RAM을 입력하면 병목을 진단하고 가장 체감 효과가 큰 업그레이드 부품을 추천해드립니다.',
+      featureList: [
+        'CPU GPU 병목 진단',
+        '33개 게임별 실행 등급 판정',
+        '비용 대비 최적 업그레이드 추천',
+        '노트북 자동 감지',
+        '파워(PSU) 호환성 체크',
+      ],
+      description: 'CPU·GPU·RAM을 입력하면 PC 병목을 진단하고 가장 체감 효과가 큰 업그레이드 부품과 가격을 추천합니다.',
     },
     {
       '@type': 'FAQPage',
@@ -56,34 +68,42 @@ const jsonLd = {
         {
           '@type': 'Question',
           name: 'PC 병목 현상이란 무엇인가요?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'CPU와 GPU 중 한쪽 성능이 다른 쪽보다 크게 낮아, 성능이 낮은 부품이 전체 시스템의 발목을 잡는 현상입니다. 예를 들어 고성능 GPU에 구형 CPU를 조합하면 CPU가 GPU의 성능을 충분히 활용하지 못합니다.',
-          },
+          acceptedAnswer: { '@type': 'Answer', text: 'CPU와 GPU 중 한쪽 성능이 다른 쪽보다 크게 낮아, 성능이 낮은 부품이 전체 시스템의 발목을 잡는 현상입니다. 예를 들어 RTX 4080 같은 고성능 GPU에 구형 i5-8600K CPU를 조합하면 CPU가 GPU의 성능을 충분히 활용하지 못해 게임 성능이 저하됩니다.' },
         },
         {
           '@type': 'Question',
-          name: '어떤 부품을 업그레이드해야 가장 효과적인가요?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: '병목 진단 결과에서 더 낮은 점수를 받은 부품을 업그레이드하는 것이 가장 효과적입니다. CPU 병목이라면 CPU를, GPU 병목이라면 GPU를 교체하면 체감 성능이 크게 향상됩니다.',
-          },
+          name: 'CPU와 GPU 중 어느 것을 먼저 업그레이드해야 할까요?',
+          acceptedAnswer: { '@type': 'Answer', text: '병목 진단 결과를 기준으로 결정하세요. GPU가 병목이라면 그래픽카드(RTX 4060, RTX 4070 등)를 교체하는 것이 게임 성능 향상에 가장 효과적입니다. 일반적으로 게임 성능에는 GPU 업그레이드 효과가 더 직접적으로 나타납니다.' },
         },
         {
           '@type': 'Question',
-          name: '견적도사는 무료인가요?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: '네, 완전 무료입니다. 서버 없이 브라우저에서만 동작하므로 개인정보를 수집하지 않습니다.',
-          },
+          name: '그래픽카드(GPU) 교체 효과가 얼마나 큰가요?',
+          acceptedAnswer: { '@type': 'Answer', text: 'GPU 병목 상황에서 그래픽카드를 교체하면 1080p·1440p 게임 성능이 20~100% 이상 향상될 수 있습니다. 예를 들어 GTX 1060에서 RTX 4060으로 교체하면 사이버펑크 2077, 엘든 링 등 고사양 게임에서 실행 등급이 크게 개선될 수 있습니다.' },
         },
         {
           '@type': 'Question',
-          name: '진단 결과는 얼마나 정확한가요?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'PassMark 점수를 기반으로 한 추정값입니다. 실제 게임 성능은 드라이버, 해상도, 그래픽 설정 등에 따라 다를 수 있습니다. 모든 결과는 1080p(FHD) 기준이며 참고용으로 활용하시기 바랍니다.',
-          },
+          name: '게임 PC에 RAM은 얼마나 필요한가요?',
+          acceptedAnswer: { '@type': 'Answer', text: '대부분의 최신 게임(배틀그라운드, 사이버펑크 2077, 엘든 링 등)의 권장 사양은 16GB입니다. 현재 8GB RAM 사용자는 16GB로 업그레이드하면 게임 로딩 속도와 멀티태스킹이 크게 개선됩니다.' },
+        },
+        {
+          '@type': 'Question',
+          name: '게임 최소사양과 권장사양의 차이는 무엇인가요?',
+          acceptedAnswer: { '@type': 'Answer', text: '최소사양은 게임이 구동은 되지만 낮은 그래픽 설정에서 버벅임이 있을 수 있는 사양입니다. 권장사양은 게임사가 의도한 그래픽 설정에서 원활하게 즐길 수 있는 사양입니다.' },
+        },
+        {
+          '@type': 'Question',
+          name: '1080p, 1440p, 4K 해상도별 필요한 GPU 사양은?',
+          acceptedAnswer: { '@type': 'Answer', text: '1080p(FHD) 기준 RTX 3060으로 원활한 게임이, 1440p(QHD)에서는 RTX 3070~3080급이 필요할 수 있습니다. 4K 고사양 게임은 RTX 4080 이상을 권장합니다. 견적도사의 진단 결과는 1080p 기준입니다.' },
+        },
+        {
+          '@type': 'Question',
+          name: '파워(PSU) 용량은 얼마나 필요한가요?',
+          acceptedAnswer: { '@type': 'Answer', text: 'RTX 4060은 550W, RTX 4070은 650W, RTX 4080은 750W 이상을 권장합니다. 견적도사는 GPU 추천 시 파워 호환성을 자동으로 체크해 경고를 표시합니다.' },
+        },
+        {
+          '@type': 'Question',
+          name: '노트북으로도 PC 업그레이드가 가능한가요?',
+          acceptedAnswer: { '@type': 'Answer', text: '대부분의 노트북은 CPU와 GPU가 메인보드에 납땜되어 있어 교체가 불가능합니다. 견적도사는 노트북 CPU가 감지되면 자동으로 안내하고 새 노트북 구매 시 참고할 스펙 기준을 제시합니다.' },
         },
       ],
     },
@@ -130,7 +150,6 @@ export default function HomePage() {
 
       <FeatureSection />
 
-      {/* 광고 — FeatureSection 과 HowItWorksSection 사이 */}
       <div className="bg-slate-950 px-4 py-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <AdUnit slot="SLOT_ID_BETWEEN_SECTIONS" format="horizontal" />
@@ -138,6 +157,7 @@ export default function HomePage() {
       </div>
 
       <HowItWorksSection />
+      <FAQSection />
       <CoupangBanner />
     </>
   );
