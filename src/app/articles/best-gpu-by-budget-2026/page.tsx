@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: '2026년 예산별 그래픽카드 추천 — 10만원부터 60만원까지 | 견적도사',
   description: '10만원대 중고부터 60만원대 신품까지 각 예산에서 최고 가성비 그래픽카드를 추천합니다. RTX 4060, RX 6700 XT, RTX 4070 등.',
   keywords: ['그래픽카드 추천 2026', '예산별 GPU 추천', '가성비 그래픽카드', 'RTX 4060 추천', '그래픽카드 구매 가이드'],
-  alternates: { canonical: `${SITE.url}/articles/best-gpu-by-budget-2026` },
+  alternates: { canonical: `${SITE.url}/articles/best-gpu-by-budget-2026/` },
 };
 
 export default function Article() {

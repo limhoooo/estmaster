@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: '배틀그라운드(PUBG) PC 사양 총정리 2026 — 60fps 구현 필요 사양 | 견적도사',
   description: '배틀그라운드 최소·권장 사양과 60fps·144fps 목표별 필요 CPU·GPU를 총정리합니다. 내 PC로 배그가 원활하게 돌아가는지 확인해보세요.',
   keywords: ['배틀그라운드 권장사양', '배그 PC 사양', 'PUBG 사양', '배틀그라운드 60fps 사양', '배그 그래픽카드 추천'],
-  alternates: { canonical: `${SITE.url}/articles/battlegrounds-pc-requirements` },
+  alternates: { canonical: `${SITE.url}/articles/battlegrounds-pc-requirements/` },
 };
 
 export default function Article() {

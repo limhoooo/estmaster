@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: '그래픽카드 온도 가이드 — 적정 온도와 과열 해결법 | 견적도사',
   description: '그래픽카드 온도가 너무 높으면 수명이 줄고 성능이 떨어집니다. 적정 온도 범위, 과열 원인, 쉬운 해결 방법을 정리합니다.',
   keywords: ['그래픽카드 온도', 'GPU 온도 적정', '그래픽카드 과열 해결', 'GPU 수명'],
-  alternates: { canonical: `${SITE.url}/articles/gpu-temperature-guide` },
+  alternates: { canonical: `${SITE.url}/articles/gpu-temperature-guide/` },
 };
 
 export default function Article() {

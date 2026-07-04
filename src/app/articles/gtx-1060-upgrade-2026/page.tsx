@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'GTX 1060 아직 쓰고 있다면 — 2026년 업그레이드 타이밍 분석 | 견적도사',
   description: 'GTX 1060이 2026년에도 쓸 만한지, 업그레이드한다면 어떤 GPU로 가야 할지 분석합니다.',
   keywords: ['GTX 1060 업그레이드', 'GTX 1060 2026', 'GTX 1060 교체', '그래픽카드 업그레이드'],
-  alternates: { canonical: `${SITE.url}/articles/gtx-1060-upgrade-2026` },
+  alternates: { canonical: `${SITE.url}/articles/gtx-1060-upgrade-2026/` },
 };
 
 export default function Article() {

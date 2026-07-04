@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'DDR4 vs DDR5: 게임 성능 차이, 업그레이드 가치 있을까? | 견적도사',
   description: 'DDR4와 DDR5 메모리의 게임 성능 차이를 실제 수치로 비교합니다. 지금 DDR5로 업그레이드할 가치가 있는지 알아보세요.',
   keywords: ['DDR4 vs DDR5', 'DDR5 게임 성능', 'RAM 업그레이드', 'DDR5 가성비'],
-  alternates: { canonical: `${SITE.url}/articles/ddr4-vs-ddr5-gaming` },
+  alternates: { canonical: `${SITE.url}/articles/ddr4-vs-ddr5-gaming/` },
 };
 
 export default function Article() {

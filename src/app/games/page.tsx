@@ -12,11 +12,11 @@ export const metadata: Metadata = {
     '엘든링 사양', 'GTA V 사양', '리그 오브 레전드 사양', '호그와트 레거시 사양',
     '게임 PC 사양', 'GPU 권장사양', '그래픽카드 게임 사양',
   ],
-  alternates: { canonical: `${SITE.url}/games` },
+  alternates: { canonical: `${SITE.url}/games/` },
   openGraph: {
     title: '게임별 권장 사양 33종 | 견적도사',
     description: '인기 게임 33종의 최소·권장 CPU GPU RAM 사양. 1080p 기준.',
-    url: `${SITE.url}/games`,
+    url: `${SITE.url}/games/`,
   },
 };
 
@@ -30,12 +30,12 @@ export default function GamesPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: '홈', item: SITE.url },
-          { '@type': 'ListItem', position: 2, name: '게임별 권장 사양', item: `${SITE.url}/games` },
+          { '@type': 'ListItem', position: 2, name: '게임별 권장 사양', item: `${SITE.url}/games/` },
         ],
       },
       {
         '@type': 'ItemList',
-        '@id': `${SITE.url}/games#list`,
+        '@id': `${SITE.url}/games/#list`,
         name: '게임별 PC 권장 사양 목록',
         description: '인기 PC 게임의 최소 및 권장 시스템 요구사항 (1080p 기준)',
         numberOfItems: games.length,
@@ -48,15 +48,15 @@ export default function GamesPage() {
       },
       {
         '@type': 'WebPage',
-        '@id': `${SITE.url}/games`,
-        url: `${SITE.url}/games`,
+        '@id': `${SITE.url}/games/`,
+        url: `${SITE.url}/games/`,
         name: '게임별 권장 사양',
         description: '인기 게임 33종의 최소·권장 CPU·GPU·RAM 사양',
         inLanguage: 'ko-KR',
         isPartOf: { '@id': `${SITE.url}/#website` },
         breadcrumb: { '@type': 'BreadcrumbList', itemListElement: [
           { '@type': 'ListItem', position: 1, name: '홈', item: SITE.url },
-          { '@type': 'ListItem', position: 2, name: '게임별 권장 사양', item: `${SITE.url}/games` },
+          { '@type': 'ListItem', position: 2, name: '게임별 권장 사양', item: `${SITE.url}/games/` },
         ]},
       },
     ],

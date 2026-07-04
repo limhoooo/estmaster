@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'RX 7600 vs RTX 4060 비교 — AMD가 더 저렴한데 성능은? | 견적도사',
   description: 'RX 7600과 RTX 4060, 비슷한 가격대 AMD vs NVIDIA 보급형 GPU를 성능·가성비·게임 호환성으로 비교합니다.',
   keywords: ['RX 7600 vs RTX 4060', 'AMD 그래픽카드 추천', 'RTX 4060 가성비', '보급형 GPU 비교'],
-  alternates: { canonical: `${SITE.url}/articles/rx-7600-vs-rtx-4060` },
+  alternates: { canonical: `${SITE.url}/articles/rx-7600-vs-rtx-4060/` },
 };
 
 export default function Article() {

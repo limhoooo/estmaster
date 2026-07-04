@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: '파워서플라이 용량 계산 가이드 — 몇 W 사야 안전할까? | 견적도사',
   description: 'CPU·GPU 조합별 필요 파워 용량 계산법과 80 PLUS 등급의 의미, 파워 부족 시 나타나는 증상을 정리합니다.',
   keywords: ['파워서플라이 용량', 'PSU 계산', '파워 용량 계산기', '80 PLUS 등급'],
-  alternates: { canonical: `${SITE.url}/articles/psu-wattage-guide` },
+  alternates: { canonical: `${SITE.url}/articles/psu-wattage-guide/` },
 };
 
 export default function Article() {

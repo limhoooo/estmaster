@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'CPU GPU 병목 현상 완벽 정리 — 원인·증상·해결법 | 견적도사',
   description: 'CPU 병목, GPU 병목이 무엇인지, 어떻게 확인하는지, 어떻게 해결하는지 쉽게 설명합니다. PC가 느린 이유를 알아보세요.',
   keywords: ['CPU 병목', 'GPU 병목', 'PC 병목 현상', '병목 확인', 'CPU 병목 해결', 'GPU 병목 해결'],
-  alternates: { canonical: `${SITE.url}/articles/cpu-gpu-bottleneck` },
+  alternates: { canonical: `${SITE.url}/articles/cpu-gpu-bottleneck/` },
 };
 
 export default function Article() {

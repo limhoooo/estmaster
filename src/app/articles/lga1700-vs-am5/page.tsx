@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'LGA1700 vs AM5 — 지금 PC 조립할 때 어느 플랫폼이 유리할까? | 견적도사',
   description: '인텔 LGA1700과 AMD AM5 플랫폼을 가격·성능·업그레이드 경로·수명 관점에서 비교합니다. 2026년 기준 CPU 플랫폼 선택 가이드.',
   keywords: ['LGA1700 vs AM5', '인텔 AMD 비교', 'AM5 LGA1700 차이', 'CPU 플랫폼 선택', '인텔 12세대 13세대', 'Ryzen 7000'],
-  alternates: { canonical: `${SITE.url}/articles/lga1700-vs-am5` },
+  alternates: { canonical: `${SITE.url}/articles/lga1700-vs-am5/` },
 };
 
 export default function Article() {

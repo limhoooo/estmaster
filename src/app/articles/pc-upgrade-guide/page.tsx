@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: '게임 PC 업그레이드 가이드 — 30만원으로 CPU vs GPU 뭘 바꿔야 할까? | 견적도사',
   description: '30만원 예산으로 CPU를 바꿔야 할까, GPU를 바꿔야 할까? 병목 진단부터 구매까지 단계별로 설명합니다.',
   keywords: ['PC 업그레이드 가이드', 'CPU GPU 업그레이드', '게임 PC 업글', '30만원 PC 업그레이드'],
-  alternates: { canonical: `${SITE.url}/articles/pc-upgrade-guide` },
+  alternates: { canonical: `${SITE.url}/articles/pc-upgrade-guide/` },
 };
 
 export default function Article() {

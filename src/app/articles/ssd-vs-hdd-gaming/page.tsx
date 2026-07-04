@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'SSD vs HDD 게임 성능 차이 — 교체하면 얼마나 빨라질까? | 견적도사',
   description: 'SSD와 HDD의 게임 로딩 속도 차이, 실제 fps 영향, 어떤 SSD를 사야 하는지까지 정리합니다.',
   keywords: ['SSD vs HDD 게임', 'SSD 업그레이드 효과', 'NVMe SSD 추천', 'SSD 게임 로딩'],
-  alternates: { canonical: `${SITE.url}/articles/ssd-vs-hdd-gaming` },
+  alternates: { canonical: `${SITE.url}/articles/ssd-vs-hdd-gaming/` },
 };
 
 export default function Article() {

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: '사이버펑크 2077 PC 사양 총정리 — 2026년 최적화 가이드 | 견적도사',
   description: '사이버펑크 2077 최소·권장·레이트레이싱 사양과 각 옵션별 필요 GPU·CPU를 2026년 기준으로 총정리합니다.',
   keywords: ['사이버펑크 2077 사양', '사이버펑크 2077 PC', '사이버펑크 최적화', '사이버펑크 권장사양'],
-  alternates: { canonical: `${SITE.url}/articles/cyberpunk-2077-pc-requirements` },
+  alternates: { canonical: `${SITE.url}/articles/cyberpunk-2077-pc-requirements/` },
 };
 
 export default function Article() {

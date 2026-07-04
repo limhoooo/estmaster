@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: '2026년 게임용 CPU 추천 — 예산별 최선의 선택 | 견적도사',
   description: '10만원대부터 50만원대까지, 2026년 현재 게임에서 가장 가성비 좋은 CPU를 예산별로 추천합니다.',
   keywords: ['게임용 CPU 추천 2026', 'CPU 가성비', '게이밍 CPU', '라이젠 인텔 CPU 추천'],
-  alternates: { canonical: `${SITE.url}/articles/best-gaming-cpu-2026` },
+  alternates: { canonical: `${SITE.url}/articles/best-gaming-cpu-2026/` },
 };
 
 export default function Article() {

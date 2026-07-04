@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: '리그 오브 레전드(롤) PC 사양 — 144fps 구현하려면? | 견적도사',
   description: '롤 최소·권장 사양과 60fps·144fps·240fps 목표별 필요 CPU·GPU를 정리합니다. 저사양 PC에서도 할 수 있는 최적화 팁 포함.',
   keywords: ['롤 PC 사양', '리그 오브 레전드 사양', '롤 144fps', '롤 저사양 최적화'],
-  alternates: { canonical: `${SITE.url}/articles/lol-pc-requirements` },
+  alternates: { canonical: `${SITE.url}/articles/lol-pc-requirements/` },
 };
 
 export default function Article() {

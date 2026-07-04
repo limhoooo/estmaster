@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'RTX 4070 Super vs RTX 4070 Ti Super — 20만원 차이, 가치 있을까? | 견적도사',
   description: 'RTX 4070 Super와 RTX 4070 Ti Super의 성능·가격 차이를 분석하고, 어떤 사용자에게 어느 쪽이 유리한지 알려드립니다.',
   keywords: ['RTX 4070 Super vs Ti Super', 'RTX 4070 Ti Super 후기', 'RTX 4070 Super 가성비', '1440p 그래픽카드 추천'],
-  alternates: { canonical: `${SITE.url}/articles/rtx-4070-super-vs-ti-super` },
+  alternates: { canonical: `${SITE.url}/articles/rtx-4070-super-vs-ti-super/` },
 };
 
 export default function Article() {

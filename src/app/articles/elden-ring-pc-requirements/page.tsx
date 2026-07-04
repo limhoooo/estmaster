@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: '엘든 링 PC 사양 총정리 — 60fps 안정적으로 돌리려면? | 견적도사',
   description: '엘든 링 최소·권장 사양과 60fps 목표별 필요 CPU·GPU를 정리합니다. 프레임 드랍 원인과 최적화 팁 포함.',
   keywords: ['엘든 링 PC 사양', '엘든 링 권장사양', '엘든 링 60fps', '엘든 링 프레임 드랍'],
-  alternates: { canonical: `${SITE.url}/articles/elden-ring-pc-requirements` },
+  alternates: { canonical: `${SITE.url}/articles/elden-ring-pc-requirements/` },
 };
 
 export default function Article() {

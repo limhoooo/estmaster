@@ -6,7 +6,7 @@ import { ARTICLES } from '@/lib/data/articles-meta';
 export const metadata: Metadata = {
   title: 'PC 부품 가이드 & 아티클 | 견적도사',
   description: 'GPU·CPU 비교, 예산별 추천, 병목 현상 해설 등 게임 PC 관련 유용한 가이드를 제공합니다.',
-  alternates: { canonical: `${SITE.url}/articles` },
+  alternates: { canonical: `${SITE.url}/articles/` },
 };
 
 export default function ArticlesPage() {

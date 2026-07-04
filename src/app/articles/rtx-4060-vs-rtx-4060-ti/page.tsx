@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'RTX 4060 vs RTX 4060 Ti 비교 — 10만원 더 쓸 가치 있을까? | 견적도사',
   description: 'RTX 4060과 RTX 4060 Ti 성능 차이 14%, 가격 차이 33%. 실제 게임 성능과 가성비를 분석해 어느 쪽이 더 현명한 선택인지 알려드립니다.',
   keywords: ['RTX 4060 vs RTX 4060 Ti', 'RTX 4060 비교', 'RTX 4060 Ti 가성비', '그래픽카드 추천'],
-  alternates: { canonical: `${SITE.url}/articles/rtx-4060-vs-rtx-4060-ti` },
+  alternates: { canonical: `${SITE.url}/articles/rtx-4060-vs-rtx-4060-ti/` },
 };
 
 export default function Article() {

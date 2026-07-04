@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: '라이젠 5 7600X vs i5-13600K — 게임용 CPU 최강자는? | 견적도사',
   description: '라이젠 5 7600X와 인텔 i5-13600K를 게임 성능, 가격, 전성비, 플랫폼 확장성으로 비교합니다. 2026년에도 유효한 분석.',
   keywords: ['라이젠 5 7600X vs i5-13600K', '게임용 CPU 추천', 'AMD Intel CPU 비교', 'CPU 가성비'],
-  alternates: { canonical: `${SITE.url}/articles/ryzen5-7600x-vs-i5-13600k` },
+  alternates: { canonical: `${SITE.url}/articles/ryzen5-7600x-vs-i5-13600k/` },
 };
 
 export default function Article() {

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'RAM 16GB vs 32GB — 게임에서 차이 나나? 업그레이드 가이드 | 견적도사',
   description: 'RAM 16GB와 32GB의 게임 성능 차이, 실제로 32GB가 필요한 상황인지 판단하는 방법을 알려드립니다.',
   keywords: ['RAM 16GB vs 32GB', 'RAM 업그레이드', '게임 RAM 용량', '메모리 업그레이드'],
-  alternates: { canonical: `${SITE.url}/articles/ram-16gb-vs-32gb-gaming` },
+  alternates: { canonical: `${SITE.url}/articles/ram-16gb-vs-32gb-gaming/` },
 };
 
 export default function Article() {

@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: 'GPU CPU 성능 비교 — RTX 4060 vs RTX 3070 등 | 견적도사',
   description: 'GPU·CPU 성능을 비교하세요. RTX 4060 vs RTX 3070, i5-13400F vs Ryzen 5 7600 등 인기 비교를 점수·가격·게임 등급으로 한눈에 확인.',
   keywords: ['GPU 비교', 'CPU 비교', 'RTX 4060 비교', 'GPU 성능 비교', '그래픽카드 비교', 'CPU 성능 비교'],
-  alternates: { canonical: `${SITE.url}/compare` },
+  alternates: { canonical: `${SITE.url}/compare/` },
   openGraph: {
     title: 'GPU CPU 성능 비교 도구 | 견적도사',
     description: '두 GPU·CPU를 선택해 성능·가격·게임 등급을 한눈에 비교.',
-    url: `${SITE.url}/compare`,
+    url: `${SITE.url}/compare/`,
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'RTX 4070 2026년 리뷰 — 지금도 살 만한 GPU인가? | 견적도사',
   description: 'RTX 4070은 2026년에도 가성비 1위 GPU일까? 성능, 가격, 경쟁 모델과의 비교로 지금 구매 가치를 분석합니다.',
   keywords: ['RTX 4070 리뷰', 'RTX 4070 가성비', 'RTX 4070 2026', '그래픽카드 추천 2026'],
-  alternates: { canonical: `${SITE.url}/articles/rtx-4070-review-2026` },
+  alternates: { canonical: `${SITE.url}/articles/rtx-4070-review-2026/` },
 };
 
 export default function Article() {

@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   description:
     '원하는 CPU와 GPU를 직접 골라 사이버펑크·배그·엘든링 등 33개 게임이 원활하게 실행되는지 확인하세요. 쿠팡·다나와 구매 링크 즉시 제공.',
   keywords: ['PC 커스텀', 'CPU GPU 조합', '게임 실행 가능 여부', '게임 사양 확인', 'PC 빌더'],
-  alternates: { canonical: `${SITE.url}/custom` },
+  alternates: { canonical: `${SITE.url}/custom/` },
   openGraph: {
     title: 'PC 커스텀 빌더 — CPU GPU 조합별 게임 등급 | 견적도사',
     description: 'CPU·GPU를 직접 골라 어떤 게임이 돌아가는지 즉시 확인. 구매 링크 제공.',
-    url: `${SITE.url}/custom`,
+    url: `${SITE.url}/custom/`,
   },
 };
 
