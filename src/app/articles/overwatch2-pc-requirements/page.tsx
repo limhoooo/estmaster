@@ -3,7 +3,7 @@ import { SITE } from '@/lib/config/site';
 import ArticleLayout, { H2, H3, P, UL, Callout, ToolCTA, Table } from '@/components/articles/ArticleLayout';
 
 export const metadata: Metadata = {
-  title: '오버워치 2 PC 사양 총정리 — 144fps 경쟁전 대비하려면? | 견적도사',
+  title: '오버워치 2 PC 사양 총정리 — 144fps 경쟁전 대비하려면?',
   description: '오버워치 2 최소·권장 사양과 60fps·144fps 목표별 필요 CPU·GPU를 정리합니다. 저사양 최적화 팁 포함.',
   keywords: ['오버워치 2 PC 사양', '오버워치 2 권장사양', '오버워치 2 144fps', '오버워치 2 최적화'],
   alternates: { canonical: `${SITE.url}/articles/overwatch2-pc-requirements/` },

@@ -24,6 +24,7 @@ export default function Footer() {
             <Link href="/games" className="hover:text-white transition-colors">게임별 권장 사양</Link>
             <Link href="/articles" className="hover:text-white transition-colors">가이드 아티클</Link>
             <Link href="/custom" className="hover:text-white transition-colors">맞춤 견적 추천</Link>
+            <Link href="/build" className="hover:text-white transition-colors">인기 조합 보기</Link>
             <Link href="/about" className="hover:text-white transition-colors">서비스 소개</Link>
             <Link href="/privacy" className="hover:text-white transition-colors">개인정보처리방침</Link>
             <Link href="/terms" className="hover:text-white transition-colors">이용약관</Link>
@@ -60,6 +61,7 @@ export default function Footer() {
               <li><Link href="/tier" className="text-sm text-slate-400 hover:text-white transition-colors">그래픽카드 티어표</Link></li>
               <li><Link href="/games" className="text-sm text-slate-400 hover:text-white transition-colors">게임별 권장 사양</Link></li>
               <li><Link href="/custom" className="text-sm text-slate-400 hover:text-white transition-colors">맞춤 견적 추천</Link></li>
+              <li><Link href="/build" className="text-sm text-slate-400 hover:text-white transition-colors">인기 조합 보기</Link></li>
             </ul>
           </div>
 

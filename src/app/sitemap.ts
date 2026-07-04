@@ -2,6 +2,7 @@ export const dynamic = 'force-static';
 
 import type { MetadataRoute } from 'next';
 import { SITE } from '@/lib/config/site';
+import { COMBOS } from '@/lib/data/combos';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -197,5 +198,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.3,
     },
+    {
+      url: `${SITE.url}/build/`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    ...COMBOS.map(c => ({
+      url: `${SITE.url}/build/${c.slug}/`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
   ];
 }

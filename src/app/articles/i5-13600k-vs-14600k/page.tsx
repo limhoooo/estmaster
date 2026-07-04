@@ -3,7 +3,7 @@ import { SITE } from '@/lib/config/site';
 import ArticleLayout, { H2, H3, P, UL, Callout, ToolCTA, Table } from '@/components/articles/ArticleLayout';
 
 export const metadata: Metadata = {
-  title: 'i5-13600K vs i5-14600K — 같은 가격이면 뭘 사야 할까? | 견적도사',
+  title: 'i5-13600K vs i5-14600K — 같은 가격이면 뭘 사야 할까?',
   description: '인텔 i5-13600K와 i5-14600K, 코어 구성은 같지만 클럭이 다른 두 CPU를 게임 성능과 가격으로 비교합니다.',
   keywords: ['i5-13600K vs i5-14600K', 'i5-14600K 후기', 'i5-13600K 가성비', '인텔 13세대 14세대 비교'],
   alternates: { canonical: `${SITE.url}/articles/i5-13600k-vs-14600k/` },
