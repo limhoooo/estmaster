@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   if (!combo) return {};
 
   const title = `${combo.cpu} + ${combo.gpu} 조합 — 게임 얼마나 될까?`;
-  const description = `${combo.cpu}와 ${combo.gpu} 조합(${combo.tagline})의 병목 분석과 인기 게임 33종 실행 등급을 1080p 기준으로 확인하세요.`;
+  const description = `${combo.review} 병목 분석과 인기 게임 33종 실행 등급을 1080p 기준으로 확인하세요.`;
 
   return {
     title,
@@ -84,6 +84,23 @@ export default async function ComboPage({ params }: { params: Promise<Params> })
 
         <div className="space-y-6">
           <BottleneckCard result={bottleneck} cpuModel={cpuData.model} gpuModel={gpuData.model} />
+
+          {/* 총평 */}
+          <div className="rounded-2xl border border-slate-700/50 bg-slate-800/40 p-6">
+            <h2 className="mb-3 text-base font-semibold text-white">총평</h2>
+            <p className="mb-5 text-sm leading-relaxed text-slate-300">{combo.review}</p>
+            <div className="mb-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {combo.goodFor.map(reason => (
+                <div key={reason} className="flex items-start gap-2 rounded-xl bg-slate-900/60 px-4 py-3">
+                  <span className="mt-0.5 flex-shrink-0 text-emerald-400">✓</span>
+                  <p className="text-sm text-slate-300">{reason}</p>
+                </div>
+              ))}
+            </div>
+            <div className="rounded-xl border border-blue-500/20 bg-blue-500/5 px-4 py-3">
+              <p className="text-xs leading-relaxed text-blue-300">💡 {combo.tip}</p>
+            </div>
+          </div>
 
           {/* 부품 구매 */}
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

@@ -26,9 +26,10 @@ export default function BuildIndexPage() {
             <Link key={c.slug} href={`/build/${c.slug}`}
               className="group rounded-2xl border border-slate-700/50 bg-slate-800/40 p-5 transition hover:border-blue-500/40 hover:bg-slate-800/70">
               <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-blue-400">{c.tagline}</p>
-              <h2 className="text-base font-semibold text-white group-hover:text-blue-300 transition-colors">
+              <h2 className="mb-2 text-base font-semibold text-white group-hover:text-blue-300 transition-colors">
                 {c.cpu} + {c.gpu}
               </h2>
+              <p className="text-sm leading-relaxed text-slate-400 line-clamp-2">{c.review}</p>
             </Link>
           ))}
         </div>
